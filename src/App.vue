@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeaderComp :navBarHeader="navBar"/>
+    <HeaderComp :navBarHeader="navBar" />
     <MainComp />
     <FooterComp />
   </div>
@@ -22,7 +22,6 @@ export default {
   data() {
     return {
       navBar: [
-
         {
           name: "Home",
           link: "/",
@@ -42,11 +41,11 @@ export default {
         {
           name: "About",
           link: "/About",
-        },{
+        },
+        {
           name: "Blog",
           link: "/Blog",
         },
-
       ],
     };
   },
@@ -54,4 +53,12 @@ export default {
 </script>
 
 <style lang="scss">
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Fredoka One", cursive;
+  font-family: "Inter", sans-serif;
+}
 </style>

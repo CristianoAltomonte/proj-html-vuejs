@@ -9,11 +9,12 @@ import App from './App.vue'
 
   /* import specific icons */
   import { faPhone } from '@fortawesome/free-solid-svg-icons'
+  import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
   
   
 
   /* add icons to the library */
-  library.add(faPhone)
+  library.add(faPhone,faArrowRight)
 
   /* add font awesome icon component */
   Vue.component('font-awesome-icon', FontAwesomeIcon)

@@ -7,7 +7,7 @@
       <div>
 
         <nav class="navbar-menu">
-          <a v-for="(elem, index) in navBarHeader" :key="index" :href= "elem.link">{{ elem.name }}</a>
+          <a v-for="(elem, index) in navBarHeader" :key="index" :href="elem.link">{{ elem.name }}</a>
         </nav>    
 
       </div>
@@ -17,16 +17,24 @@
         <button>Free Quote</button>
 
       </div>
-      <div>
-      </div>
 
     </div>
+    <JumbotronHeaderComp/>
   </header>
+
 </template>
 
 <script>
+import JumbotronHeaderComp from "./JumbotronHeaderComp.vue";
+
+
 export default {
   name: "HeaderComp",
+
+  components:{
+
+    JumbotronHeaderComp,
+  },
 
   props: {
     navBarHeader: Array,
@@ -43,6 +51,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
 }
 a{
   margin: 0px 5px;
@@ -57,9 +66,10 @@ button{
   background-color: rgba(255, 231, 218, 1);
   border: none;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px 40px;
   margin-left: 10px;
   color: rgb(248,96,17);
+  font-size: 1.2rem;
 
   &:hover{
     background-color: rgb(248,96,17);
