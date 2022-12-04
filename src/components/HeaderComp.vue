@@ -2,7 +2,8 @@
   <header>
     <div class="container-nav">
       <div>
-        <img src="../assets/images/avada-marketing-logo-2x-200x37.png" alt="#">
+        
+        <a href="https://avada.theme-fusion.com/marketing-consultant/"> <img src="../assets/images/avada-marketing-logo-2x-200x37.png" alt="#"></a>
       </div>
       <div>
 
@@ -61,6 +62,7 @@ a{
 
 .fa-phone{
   color: rgb(248,96,17);
+  cursor: pointer;
 }
 button{
   background-color: rgba(255, 231, 218, 1);
@@ -70,6 +72,7 @@ button{
   margin-left: 10px;
   color: rgb(248,96,17);
   font-size: 1.2rem;
+  cursor: pointer;
 
   &:hover{
     background-color: rgb(248,96,17);
