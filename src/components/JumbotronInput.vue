@@ -17,7 +17,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "JumbotronInput"
+};
+
 </script>
 
 <style lang="scss" scoped>
@@ -29,7 +32,7 @@ export default {};
   line-height: 2.5em;
   position: relative;
   top: 50px;
-  border: 1px solid grey;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.229);
 
   span {
     display: block;

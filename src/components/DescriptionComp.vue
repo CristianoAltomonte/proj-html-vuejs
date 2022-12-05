@@ -67,10 +67,10 @@ export default {
     font-size: 1.1rem;
     margin: 50px 0;
 
-    &:hover{
-    background-color: rgb(208, 85, 20);
-    cursor: pointer;
-  }
+    &:hover {
+      background-color: rgb(208, 85, 20);
+      cursor: pointer;
+    }
   }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeaderComp :navBarHeader="navBar" />
-    <MainComp :descriptionMain="description" :brandsMain="brands"/>
+    <MainComp :descriptionMain="description" :brandsMain="brands" :cardEmployee="cards" />
     <FooterComp />
   </div>
 </template>
@@ -13,6 +13,7 @@ import FooterComp from "./components/FooterComp.vue";
 
 export default {
   name: "App",
+
   components: {
     HeaderComp,
     MainComp,
@@ -52,29 +53,58 @@ export default {
         {
           image: "image_1.png",
           title: "Increase Brand Awareness",
-          paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.",
+          paragraph:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.",
           button: "Get A Consultation",
-
         },
         {
           image: "image_2.png",
           title: "In-House Sales Training",
-          paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.",
+          paragraph:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.",
           button: "Get A Consultation",
-          invert: "rotate:180deg"
-
+          invert: "rotate:180deg",
         },
         {
           image: "image_3.png",
           title: "Harness Your Social Proof",
-          paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.",
-          button: "Get A Consultation"
-
+          paragraph:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.",
+          button: "Get A Consultation",
         },
       ],
 
-      brands:["abstract.png", "cglobal.png", "next.png", "hemisferio.png", "spaces.png", "digitalbox.png"],
+      brands: [
+        "abstract.png",
+        "cglobal.png",
+        "next.png",
+        "hemisferio.png",
+        "spaces.png",
+        "digitalbox.png",
+      ],
 
+      cards: [
+        {
+          image: "case-studies-1-400x450.jpg",
+          about:
+            "How Spaces attracted five million visitors by improving the content",
+          score: "200%",
+          role: "Higher revenue from digital",
+        },
+        {
+          image: "case-studies-4-400x450.jpg",
+          about:
+            "Creativity helped Hemisferio to increase their brand reach vertically",
+          score: "10x",
+          role: "Sales increase with the same ad spend",
+        },
+        {
+          image: "case-studies-6-400x450.jpg",
+          about: "How DigitalBox used AI-powered data insight to boost sales",
+          score: "3-year",
+          role: "Partnership with Avada Consultant",
+        },
+      ],
     };
   },
 };
@@ -92,21 +122,25 @@ export default {
   font-family: "Inter", sans-serif;
 }
 
-.d-flex{
+.d-flex {
   display: flex;
 }
 
-.center{
+.center {
   width: 80%;
   margin: 0 auto;
 }
 
-.space-between{
+.space-between {
   display: flex;
   justify-content: space-between;
 }
 
-.text-center{
+.text-center {
   text-align: center;
+}
+
+.align-item{
+align-items: center;
 }
 </style>
