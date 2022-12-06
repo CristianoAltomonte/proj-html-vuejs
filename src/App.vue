@@ -6,6 +6,7 @@
       :brandsMain="brands"
       :cardEmployee="cards"
       :awardsIcon="awards"
+      :technique="technique"
     />
     <FooterComp />
   </div>
@@ -127,6 +128,21 @@ export default {
         {
           iconwin: "award-d-200x191.png",
           contain: "National Excellence Agencie Award Winner 2020",
+        },
+      ],
+      
+      technique: [
+        {
+          image: "blog-posts-6.jpg",
+          title: "Marketing Tips And Tricks For Your Website",
+        },
+        {
+          image: "blog-posts-5.jpg",
+          title: "How to Write Stunning Blog Post Titles",
+        },
+        {
+          image: "blog-posts-4.jpg",
+          title: "Techniques to Reduce Facebook Ads Spend",
         },
       ],
     };

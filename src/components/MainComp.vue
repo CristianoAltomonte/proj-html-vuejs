@@ -69,40 +69,47 @@
         <div class="icons">
           <div class="d-flex">
             <div>
-              <font-awesome-icon icon="fa-solid fa-square-poll-vertical"  class="color-icon"/>
+              <font-awesome-icon
+                icon="fa-solid fa-square-poll-vertical"
+                class="color-icon"
+              />
             </div>
             <div>
               <h3>Accountability</h3>
               <p>Curabitur ac leo nunc vestibulum</p>
             </div>
-            
           </div>
           <div class="d-flex">
-
             <div>
-              <font-awesome-icon icon="fa-solid fa-folder-plus" class="color-icon"/>
+              <font-awesome-icon
+                icon="fa-solid fa-folder-plus"
+                class="color-icon"
+              />
             </div>
             <div>
               <h3>Transparency</h3>
-            <p>Curabitur ac leo nunc vestibulum</p>
+              <p>Curabitur ac leo nunc vestibulum</p>
             </div>
-
           </div>
           <div class="d-flex">
             <div>
-              <font-awesome-icon icon="fa-solid fa-chart-simple" class="color-icon"/>
+              <font-awesome-icon
+                icon="fa-solid fa-chart-simple"
+                class="color-icon"
+              />
             </div>
             <div>
               <h3>Investment</h3>
-            <p>Curabitur ac leo nunc vestibulum</p>
+              <p>Curabitur ac leo nunc vestibulum</p>
             </div>
-            
           </div>
         </div>
       </div>
     </div>
     <AwardsComp :awardsIcon="awardsIcon" />
     <MarketingComp />
+    <MarketingResourcesComp :technique="technique" />
+    <MakeThingsComp />
   </div>
 </template>
 
@@ -112,6 +119,8 @@ import BrandsComp from "./BrandsComp.vue";
 import CardEmployeeComp from "./CardEmployeeComp.vue";
 import AwardsComp from "./AwardsComp.vue";
 import MarketingComp from "./MarketingComp.vue";
+import MarketingResourcesComp from "./MarketingResourcesComp.vue";
+import MakeThingsComp from "./MakeThingsComp.vue";
 
 export default {
   name: "MainComp",
@@ -122,14 +131,16 @@ export default {
     CardEmployeeComp,
     AwardsComp,
     MarketingComp,
-},
+    MarketingResourcesComp,
+    MakeThingsComp,
+  },
 
   props: {
     descriptionMain: Array,
     cardEmployee: Array,
     brandsMain: Array,
     awardsIcon: Array,
-    
+    technique: Array,
   },
 };
 </script>
@@ -197,35 +208,33 @@ export default {
   display: flex;
   flex-direction: column;
 
-  .color-icon{
+  .color-icon {
     color: rgb(248, 96, 17);
     font-size: 2.5rem;
     margin: 20px 15px;
     border: 2px solid rgb(248, 96, 17);
     border-radius: 15px;
     padding: 10px;
-
   }
 
-  p{
+  p {
     display: inline;
   }
 }
 
-.container-info{
+.container-info {
   margin-top: 5%;
 }
 
-.container-left{
- margin-top: 50px;
+.container-left {
+  margin-top: 50px;
 }
 
-.container-width{
+.container-width {
   width: 50%;
 
-  p{
+  p {
     margin-right: 25%;
   }
 }
-
 </style>
