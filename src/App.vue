@@ -1,7 +1,12 @@
 <template>
   <div>
     <HeaderComp :navBarHeader="navBar" />
-    <MainComp :descriptionMain="description" :brandsMain="brands" :cardEmployee="cards" />
+    <MainComp
+      :descriptionMain="description"
+      :brandsMain="brands"
+      :cardEmployee="cards"
+      :awardsIcon="awards"
+    />
     <FooterComp />
   </div>
 </template>
@@ -105,6 +110,25 @@ export default {
           role: "Partnership with Avada Consultant",
         },
       ],
+
+      awards: [
+        {
+          iconwin: "award-a-200x191.png",
+          contain: "Winner Seo Master MAGT Smart Start Award 2017",
+        },
+        {
+          iconwin: "award-b-200x191.png",
+          contain: "Top Social Media Agencies Next Partner 2018",
+        },
+        {
+          iconwin: "award-c-200x191.png",
+          contain: "10 Fastest Growing Abstract Solution Providers 2019",
+        },
+        {
+          iconwin: "award-d-200x191.png",
+          contain: "National Excellence Agencie Award Winner 2020",
+        },
+      ],
     };
   },
 };
@@ -140,7 +164,7 @@ export default {
   text-align: center;
 }
 
-.align-item{
-align-items: center;
+.align-item {
+  align-items: center;
 }
 </style>

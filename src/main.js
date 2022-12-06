@@ -10,11 +10,14 @@ import App from './App.vue'
   /* import specific icons */
   import { faPhone } from '@fortawesome/free-solid-svg-icons'
   import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+  import { faSquarePollVertical } from '@fortawesome/free-solid-svg-icons'
+  import { faFolderPlus } from '@fortawesome/free-solid-svg-icons'
+  import { faChartSimple } from '@fortawesome/free-solid-svg-icons'
   
   
 
   /* add icons to the library */
-  library.add(faPhone,faArrowRight)
+  library.add(faPhone,faArrowRight,faSquarePollVertical,faFolderPlus,faChartSimple)
 
   /* add font awesome icon component */
   Vue.component('font-awesome-icon', FontAwesomeIcon)
