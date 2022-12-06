@@ -13,7 +13,7 @@
             <button>Explore All Resources</button>
           </div>
         </div>
-        
+
         <div class="d-flex">
           <div v-for="(elem, index) in technique" :key="index">
             <div>
@@ -44,16 +44,15 @@ export default {
 
 <style lang="scss" scoped>
 .container-resources {
+  .container-top {
+    margin-bottom: 5%;
+  }
 
-    .container-top{
-        margin-bottom: 5%;
-    }
-    
   margin-top: 5%;
   background-color: rgb(247, 247, 248);
   padding: 5% 0;
 
-  h2{
+  h2 {
     font-size: 1.9rem;
     margin: 20px 0;
   }
@@ -80,5 +79,9 @@ export default {
   h1 {
     font-size: 2.1rem;
   }
+}
+img:hover{
+  
+  filter: drop-shadow(1px 20px 15px rgb(248, 96, 17));
 }
 </style>

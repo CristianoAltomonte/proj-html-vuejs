@@ -7,8 +7,7 @@
           <span class="subtitle"
             >Online marketing to secure customer retention, leads, and sales. We
             focus on the bigger picture.
-            <font-awesome-icon icon="fa-brands fa-facebook-f"
-          /></span>
+            </span>
           <button>
             Our Service <font-awesome-icon icon="fa-solid fa-arrow-right" />
           </button>
@@ -22,7 +21,7 @@
   </div>
 </template>
 
-<script >
+<script>
 import JumbotronInput from "./JumbotronInput.vue";
 
 export default {
@@ -70,6 +69,7 @@ button{
     border-radius: 10px;
     font-size: 1.2rem;
     margin: 30px 0;
+    cursor: pointer;
 
     &:hover{
         background-color: transparent;

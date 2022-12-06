@@ -8,7 +8,7 @@
       :awardsIcon="awards"
       :technique="technique"
     />
-    <FooterComp />
+    <FooterComp :socials="socials" :services="services" :resources="resources" :company="company"/>
   </div>
 </template>
 
@@ -130,7 +130,7 @@ export default {
           contain: "National Excellence Agencie Award Winner 2020",
         },
       ],
-      
+
       technique: [
         {
           image: "blog-posts-6.jpg",
@@ -145,6 +145,26 @@ export default {
           title: "Techniques to Reduce Facebook Ads Spend",
         },
       ],
+
+      socials: [
+        "fa-brands fa-facebook-f",
+        "fa-brands fa-twitter",
+        "fa-brands fa-instagram",
+        "fa-brands fa-youtube",
+        "fa-brands fa-linkedin",
+        "fa-brands fa-tiktok",
+      ],
+        
+      services: [
+        "Marketing Plan",
+        "Sales Development",
+        "Digital Marketing",
+        "Pricing",
+        "Why Us",
+        "Case Studies",
+      ],
+      resources: ["Learning Center", "Video Tutorials", "Customers", "Blog"],
+      company: ["Who We Are", "Contact Us", "Careers"],
     };
   },
 };

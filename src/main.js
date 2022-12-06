@@ -13,11 +13,17 @@ import App from './App.vue'
   import { faSquarePollVertical } from '@fortawesome/free-solid-svg-icons'
   import { faFolderPlus } from '@fortawesome/free-solid-svg-icons'
   import { faChartSimple } from '@fortawesome/free-solid-svg-icons'
+  import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+  import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+  import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+  import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+  import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+  import { faTiktok } from '@fortawesome/free-brands-svg-icons'
   
   
 
   /* add icons to the library */
-  library.add(faPhone,faArrowRight,faSquarePollVertical,faFolderPlus,faChartSimple)
+  library.add(faPhone,faArrowRight,faSquarePollVertical,faFolderPlus,faChartSimple,faFacebookF,faTwitter,faInstagram,faYoutube,faLinkedin,faTiktok)
 
   /* add font awesome icon component */
   Vue.component('font-awesome-icon', FontAwesomeIcon)
