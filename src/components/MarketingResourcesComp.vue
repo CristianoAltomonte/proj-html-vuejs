@@ -55,6 +55,11 @@ export default {
   h2 {
     font-size: 1.9rem;
     margin: 20px 0;
+    cursor: pointer;
+
+    &:hover{
+     color:  rgb(248, 96, 17);
+    }
   }
 
   button {

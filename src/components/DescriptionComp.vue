@@ -73,4 +73,28 @@ export default {
     }
   }
 }
+@keyframes mymove {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(10px, 10px) rotate(10deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-10px, 10px) rotate(-10deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+img {
+  width: 50%;
+  height: 40%;
+  &:hover {
+    animation: mymove 3s infinite;
+  }
+}
 </style>

@@ -54,6 +54,9 @@ h2 {
   img {
     width: 380px;
     cursor: pointer;
+    &:hover {
+      filter: drop-shadow(1px 20px 15px rgb(248, 96, 17));
+    }
   }
 
   .margin {
@@ -79,7 +82,7 @@ h2 {
     }
   }
 
-  .div-button{
+  .div-button {
     margin: 5% 0;
   }
 }

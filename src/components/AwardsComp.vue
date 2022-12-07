@@ -1,10 +1,13 @@
 <template>
   <div>
     <h2 class="text-center">Awards</h2>
-    <div class="space-between center align-item">
+    <div class="space-between center align-item prova">
       <div v-for="(elem, index) in awardsIcon" :key="index">
-        <div></div>
-        <img :src="require(`../assets/images/${elem.iconwin}`)" alt="" />
+        <img
+          :src="require(`../assets/images/${elem.iconwin}`)"
+          :style="`${elem.style}`"
+          alt=""
+        />
         <p>{{ elem.contain }}</p>
       </div>
     </div>
@@ -22,14 +25,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-h2{
-    margin: 5% 0;
+h2 {
+  margin: 5% 0;
 }
 img {
+  width: 150px;
 
-  aspect-ratio: 1/3;
 }
+
 
 p {
   margin-right: 70px;

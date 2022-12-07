@@ -116,6 +116,7 @@ export default {
         {
           iconwin: "award-a-200x191.png",
           contain: "Winner Seo Master MAGT Smart Start Award 2017",
+          style: "filter: invert(100%)"
         },
         {
           iconwin: "award-b-200x191.png",
@@ -124,10 +125,13 @@ export default {
         {
           iconwin: "award-c-200x191.png",
           contain: "10 Fastest Growing Abstract Solution Providers 2019",
+          style: "filter:hue-rotate(336deg) contrast(116%)",
+
         },
         {
           iconwin: "award-d-200x191.png",
           contain: "National Excellence Agencie Award Winner 2020",
+          style:"filter: hue-rotate(216deg) saturate(124%) brightness(104%) contrast(106%)",
         },
       ],
 

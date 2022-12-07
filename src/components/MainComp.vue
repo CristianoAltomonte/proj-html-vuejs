@@ -208,6 +208,10 @@ export default {
   display: flex;
   flex-direction: column;
 
+  h3:hover{
+    color: rgb(248, 96, 17);
+  }
+
   .color-icon {
     color: rgb(248, 96, 17);
     font-size: 2.5rem;
